@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учим английский</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__logo" href="#"><span>English</span> <span>Easy</span></a>
+            <nav class="nav">
+                <a class="nav__link" href="archive.html">Archive</a>
+                <a class="nav__link" href="#">Service</a>
+                <a class="nav__link" href="#">Work</a>
+                <a class="nav__link" href="#">Blog</a>
+                <a class="nav__link" href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+
+        <div id="main-word" class="main-word">
+            <div class="front" id="front">
+                <img src="usa.png" alt="usa_img">
+                <p class="word" id="word">Let's begin to learn English</p>
+                <p class="transcription" id="transcription">together</p>
+            </div>
+            <div class="back" id="back">
+                <img src="ukraine.png" alt="">
+                <p class="word-translate" id="word-translate">Почнімо вчити англійську мову разом</p>
+            </div>
+        </div>
+
+        <div class="input-word">
+            <input type="text" id="input-field" class="input-field">
+        </div>
+
+        <div class="line-btns">
+            <button id="submit" class="submit">Перевірити</button>
+            <button id="next-word" class="next-word" disabled>Випадкове слово</button>
+        </div>
+
+
+        <div class="float-menu hidden" id="float-menu">
+            <div class="learned-words hidden" id="learned-words">
+                <div class="words-from-face" id="learned-words-from-face"></div>
+                <div class="words-from-back" id="learned-words-from-back"></div>
+            </div>
+            <div class="new-words hidden" id="new-words">
+                <div class="words-from-face" id="new-words-from-face"></div>
+                <div class="words-from-back" id="new-words-from-back"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <p class="list-learned-words" id="list-learned-words">ВИВЧЕНІ СЛОВА</p>
+        </div>
+        <div>
+            <p class="list-new-words" id="list-new-words">НЕВИВЧЕНІ СЛОВА</p>
+        </div>
+        <!--<div><input type="text"></div>-->
+        <div>
+            <input type="text" class="input-change-theme hidden" id="input-change-theme" value="e3cxOiBbIkFjY2VzcyIsICJbJ8Omay5zZXNdIiwgItCU0L7RgdGC0YPQvyJdLHcyOiBbIkFmZmVjdCIsICJbyZknZmVrdF0iLCAi0JLQv9C70LjQstCw0YLQuCJdfQ==">
+            <p id="change-theme">ЗМІНИТИ ТЕМУ</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
