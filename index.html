@@ -1,82 +1,144 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Учим английский</title>
-    <link rel="stylesheet" href="style.css">
+    <title>EnglishEasy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
-    <header class="header">
-        <div class="header__inner">
-            <a class="header__logo" href="#"><span>English</span> <span>Easy</span></a>
-            <nav class="nav">
-                <a class="nav__link" href="archive.html">Archive</a>
-                <a class="nav__link" href="#">Service</a>
-                <a class="nav__link" href="#">Work</a>
-                <a class="nav__link" href="#">Blog</a>
-                <a class="nav__link" href="#">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-
-
-    <div class="container">
-
-        <div id="main-word" class="main-word">
-            <div class="front" id="front">
-                <img src="usa.png" alt="usa_img">
-                <p class="word" id="word">Let's begin to learn English</p>
-                <p class="transcription" id="transcription">together</p>
+    <div class="wrapper">
+        <header class="header">
+            <!--<div class="header__inner">
+                <a class="header__logo" href="index.html"><span>ENGLISH</span> <span>EASY</span></a>
+                <nav class="nav">
+                    <span class="nav__span">
+                        <span class="nav__ico"><i class="fa-solid fa-graduation-cap"></i></span>
+                        <span class="nav__text hidden">КАРТОЧКИ</span>
+                    </span>
+                    <span class="nav__span">
+                        <span class="nav__ico"><i class="fa-solid fa-spell-check"></i></span>
+                        <span class="nav__text hidden">СЛОВНИК</span>
+                    </span>
+                    <span class="nav__span">
+                        <span class="nav__ico"><i class="fa-sharp fa-solid fa-bookmark"></i></span>
+                        <span class="nav__text hidden">ВИВЧЕНІ СЛОВА</span>
+                    </span>
+                </nav>
+                <div class="header__setting">
+                    <span class="nav__ico"><i class="fa-solid fa-gear"></i></span>
+                    <span class="nav__text hidden">НАЛАШТУВАННЯ</span>
+                </div>
+            </div>-->
+        </header>
+        <div class="content">
+            <div class="img__bg">
+                <div class="cards">
+                    <div id="main-word" class="main-word">
+                        <div class="front" id="front">
+                            <!--<img src="usa.png" alt="usa_img">-->
+                            <p class="word" id="word">Let's begin to learn English</p>
+                            <p class="transcription" id="transcription">together</p>
+                        </div>
+                        <div class="back" id="back">
+                            <!--<img src="ukraine.png" alt="">-->
+                            <p class="word-translate" id="word-translate">Почнімо вчити англійську мову разом</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="back" id="back">
-                <img src="ukraine.png" alt="">
-                <p class="word-translate" id="word-translate">Почнімо вчити англійську мову разом</p>
+            <div class="inteactive_module">    
+                <div class="btn_next" id="next-word"><p>ВИПАДКОВЕ СЛОВО</p></div>
+
+                <div class="canvas_test hidden" id="canvas_test">
+                    <div class="variants" id="variants">
+                        <div class="option" id="var_one">Варіант 1</div>
+                        <div class="option" id="var_two">Варіант 2</div>
+                        <div class="option" id="var_three">Варіант 3</div>
+                        <div class="option" id="var_four">Варіант 4</div>
+                    </div>
+                    <div class="apply_variants" id="apply_variants">ПЕРЕВІРИТИ</div>
+                </div>
+
+                <div class="canvas_test_couple hidden" id="canvas_test_couple">
+                    <div class="find_couple_original">
+                        <div>Варіант 1</div>
+                        <div>Варіант 2</div>
+                        <div>Варіант 3</div>
+                        <div>Варіант 4</div>
+                        <div>Варіант 5</div>
+                    </div>
+                    <div class="find_couple_translate">
+                        <div>Варіант 1</div>
+                        <div>Варіант 2</div>
+                        <div>Варіант 3</div>
+                        <div>Варіант 4</div>
+                        <div>Варіант 5</div>
+                    </div>
+                </div>
+                <div class="canvas_test_input hidden" id="canvas_test_input">
+
+                </div>
+                <div class="setting_menu hidden" id="setting_menu">
+
+                </div>
             </div>
         </div>
+        <footer>
+            <div class="navigation">
+                <ul>
+                    <li class="list active" style="--clr:#191D40">
+                        <a href="#">
+                            <span class="icon" id="learn_word">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list"  style="--clr:#191D40">
+                        <a href="#">
+                            <span class="icon" id="mode_test">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list"  style="--clr:#191D40">
+                        <a href="#">
+                            <span class="icon" id="mode_couple">
+                                <ion-icon name="bookmarks-outline"></ion-icon>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list"  style="--clr:#191D40">
+                        <a href="#">
+                            <span class="icon" id="mode_input">
+                                <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list"  style="--clr:#191D40">
+                        <a href="#">
+                            <span class="icon" id="setting_btn">
+                                <ion-icon name="settings-outline"></ion-icon>
+                            </span>
+                        </a>
+                    </li>
+                    <div class="indicator">
 
-        <div class="input-word">
-            <input type="text" id="input-field" class="input-field">
-        </div>
-
-        <div class="line-btns">
-            <button id="submit" class="submit">Перевірити</button>
-            <button id="next-word" class="next-word" disabled>Випадкове слово</button>
-        </div>
-
-
-        <div class="float-menu hidden" id="float-menu">
-            <div class="learned-words hidden" id="learned-words">
-                <div class="words-from-face" id="learned-words-from-face"></div>
-                <div class="words-from-back" id="learned-words-from-back"></div>
+                    </div>
+                </ul>
             </div>
-            <div class="new-words hidden" id="new-words">
-                <div class="words-from-face" id="new-words-from-face"></div>
-                <div class="words-from-back" id="new-words-from-back"></div>
-            </div>
-        </div>
+        </footer>
     </div>
 
-    <footer class="footer">
-        <div>
-            <p class="list-learned-words" id="list-learned-words">ВИВЧЕНІ СЛОВА</p>
-        </div>
-        <div>
-            <p class="list-new-words" id="list-new-words">НЕВИВЧЕНІ СЛОВА</p>
-        </div>
-        <!--<div><input type="text"></div>-->
-        <div>
-            <input type="text" class="input-change-theme hidden" id="input-change-theme" value="e3cxOiBbIkFjY2VzcyIsICJbJ8Omay5zZXNdIiwgItCU0L7RgdGC0YPQvyJdLHcyOiBbIkFmZmVjdCIsICJbyZknZmVrdF0iLCAi0JLQv9C70LjQstCw0YLQuCJdfQ==">
-            <p id="change-theme">ЗМІНИТИ ТЕМУ</p>
-        </div>
-    </footer>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
