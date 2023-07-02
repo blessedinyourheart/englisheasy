@@ -678,7 +678,7 @@ footer{
         border-radius: 0 50px 0 0;
     }
     .variants div {
-        height: 100px;
+        height: 90px;
         border-radius: 20px;
         font-size: 20px;
         top: 10px;
@@ -693,8 +693,8 @@ footer{
     .btn_next {
         position: absolute;
         width: 90%;
-        height: 140px;
-        top: 50%;
+        height: 130px;
+        top: 40%;
         border-radius: 40px;
         font-size: 20px;
     }
