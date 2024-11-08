@@ -315,7 +315,7 @@ var dictionary = {
   "great hall": ["ɡreɪt hɔːl", ["большой зал"]],
   "owlery": ["ˈaʊləri", ["совятня"]],
   "troll": ["troʊl", ["тролль"]],
-  "the dark lord": ["ðə dɑrk lɔrd", ["Темный Лорд"]]
+  "the dark lord": ["ðə dɑrk lɔrd", ["Темный Лорд"]],
   "hello": ["həˈloʊ", ["привет"]],
   "friend": ["frɛnd", ["друг"]],
   "family": ["ˈfæmɪli", ["семья"]],
