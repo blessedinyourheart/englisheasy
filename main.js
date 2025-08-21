@@ -310,7 +310,7 @@ var dictionary = {
     "amusing": ["əˈmjuːzɪŋ", ["веселий"]],
     "enraged": ["ɪnˈreɪdʒd", ["розлючений"]],
     "miserable": ["ˈmɪzrəbl", ["нещасний"]],
-    "thrilled": ["θrɪld", ["у захваті"]]
+    "thrilled": ["θrɪld", ["у захваті"]],
     "wizard": ["ˈwɪzərd", ["волшебник"]],
     "witch": ["wɪtʃ", ["ведьма"]],
   "spell": ["spɛl", ["заклинание"]],
